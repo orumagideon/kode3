@@ -1,0 +1,204 @@
+/* About Page Styles */
+.about-page {
+  min-height: 100vh;
+}
+
+/* About Header */
+.about-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about-header h1 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+}
+
+.about-header p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.3rem;
+}
+
+/* Company Story */
+.company-story {
+  padding: 80px 0;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-text h2 {
+  margin-bottom: 30px;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+.story-text p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: var(--text-light);
+  font-size: 1.05rem;
+}
+
+.story-visual {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.story-stat {
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(255, 107, 53, 0.1));
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.story-stat:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--box-shadow-hover);
+  transform: translateY(-5px);
+}
+
+.story-stat h3 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.story-stat p {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+/* Founders Section */
+.founders-section {
+  background: var(--light-bg);
+  padding: 80px 0;
+}
+
+.founders-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+/* Values Section */
+.values-section {
+  padding: 80px 0;
+}
+
+.values-section h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: var(--transition);
+  border: 2px solid var(--border-color);
+}
+
+.value-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--box-shadow-hover);
+  transform: translateY(-8px);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.value-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .story-visual {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-header {
+    padding: 60px 0;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .company-story {
+    padding: 60px 0;
+  }
+
+  .story-text h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+  }
+
+  .story-stat {
+    padding: 30px;
+  }
+
+  .story-stat h3 {
+    font-size: 2rem;
+  }
+
+  .founders-section,
+  .values-section {
+    padding: 60px 0;
+  }
+
+  .founders-grid,
+  .values-grid {
+    gap: 20px;
+  }
+
+  .founders-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

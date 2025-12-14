@@ -1,0 +1,213 @@
+/* Services Page Styles */
+.services-page {
+  min-height: 100vh;
+}
+
+/* Services Header */
+.services-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.services-header h1 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+}
+
+.services-header p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.3rem;
+}
+
+/* Services Content */
+.services-content {
+  padding: 80px 0;
+}
+
+.services-grid-detailed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.detailed-service {
+  transition: var(--transition);
+}
+
+.service-details {
+  margin-top: 20px;
+}
+
+.service-details p {
+  color: var(--text-light);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Process Section */
+.process-section {
+  background: var(--light-bg);
+  padding: 80px 0;
+}
+
+.process-section h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.process-step {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  transition: var(--transition);
+}
+
+.process-step:hover {
+  box-shadow: var(--box-shadow-hover);
+  transform: translateY(-8px);
+}
+
+.step-number {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.process-step h3 {
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.process-step p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Process Step Connector */
+@media (min-width: 1024px) {
+  .process-step::after {
+    content: '';
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+  }
+
+  .process-step:last-child::after {
+    display: none;
+  }
+}
+
+/* Tech Stack Section */
+.tech-stack {
+  padding: 80px 0;
+}
+
+.tech-stack h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.tech-category {
+  background: white;
+  border: 2px solid var(--border-color);
+  padding: 40px;
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+.tech-category:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--box-shadow-hover);
+  transform: translateY(-5px);
+}
+
+.tech-category h3 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+.tech-category ul {
+  list-style: none;
+}
+
+.tech-category li {
+  padding: 10px 0;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.tech-category li:last-child {
+  border-bottom: none;
+}
+
+.tech-category:hover li {
+  padding-left: 10px;
+  color: var(--text-dark);
+}
+
+.tech-category li::before {
+  content: '→ ';
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-header {
+    padding: 60px 0;
+  }
+
+  .services-header h1 {
+    font-size: 2rem;
+  }
+
+  .services-content {
+    padding: 60px 0;
+  }
+
+  .services-grid-detailed {
+    gap: 30px;
+  }
+
+  .process-section,
+  .tech-stack {
+    padding: 60px 0;
+  }
+
+  .process-steps,
+  .tech-categories {
+    gap: 20px;
+  }
+
+  .process-step::after {
+    display: none;
+  }
+}
