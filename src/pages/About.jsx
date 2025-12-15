@@ -11,21 +11,21 @@ export default function About() {
       name: 'GIDEON ORUMA',
       role: 'CEO & Lead Developer',
       bio: 'Visionary leader with expertise in full-stack development and technical architecture. Drives innovation and ensures every project meets our high standards.',
-      contact: '0718461521',
+      contact: '+254718461521',
       image: Gid1
     },
     {
       name: 'Kevin Bett',
       role: 'CTO & Co-founder',
       bio: 'Full-stack developer passionate about scalable, high-performance solutions. Brings technical excellence and innovative problem-solving to every project.',
-      contact: '0740148013',
+      contact: '+254740148013',
       image: Kev3
     },
     {
       name: 'ABNER SANTOS',
       role: 'Design & Product Lead',
       bio: 'UX/UI expert focused on user-centric design and digital transformation. Creates beautiful, intuitive solutions that users love.',
-      contact: '0741607228',
+      contact: '+254741607228',
       image: Eng2
     }
   ];
