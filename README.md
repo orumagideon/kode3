@@ -158,7 +158,7 @@ npm lint
 - Key statistics
 - **Founder profiles with actual photos and contact information:**
   - Gideon Oruma - CEO & Lead Developer (0718461521)
-  - Kevin Bett - CTO & Co-founder (0740148013)
+  - Kevin Bett - CTO & Co-founder (0717460423)
   - Abner Santos - Design & Product Lead (0741607228)
 - Core values section
 
